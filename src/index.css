@@ -40,14 +40,14 @@ body {
   gap: 8px;
 }
 .content:before {
-  content: '';
+  content: "";
   position: absolute;
   height: 4px;
   width: 60px;
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  background:rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 h2 {
   margin-bottom: 8px;
@@ -63,12 +63,28 @@ p {
 button {
   height: 56px;
   border: none;
-  background:rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   font-size: 16px;
   padding: 0 16px;
+  cursor: pointer;
+  color: #007AFE;
+}
+button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+button:active {
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
 }
 button.warning {
   color: tomato;
   background: rgba(255, 99, 71, 0.075);
+}
+button.warning:hover {
+  background: rgba(255, 99, 71, 0.15);
+}
+button.warning:active {
+  background: tomato;
+  color: white;
 }
